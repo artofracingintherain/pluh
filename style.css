@@ -1,0 +1,39 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: black;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: url('https://cdn.glitch.global/2ad4aeba-5126-4b34-9608-9ba2461669ed/dog%20shh.jpg?v=1742047571264')
+}
+@keyframes spin{
+  0% {transform:rotate(0deg);}
+  25% {transform:rotate(90deg);}
+  50% {transform:rotate(180deg);}
+  75% {transform:rotate(270deg);}
+  100% {transform:rotate(360deg);}
+}
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.gif{
+  animation-name:spin;
+  animation-duration:0.5s;
+  animation-iteration-count:infinite;
+}
